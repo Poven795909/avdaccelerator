@@ -1829,16 +1829,29 @@
                                     }
                                 },
                                 {
-                                    "name": "storageAccountPrefixCustomName",
+                                    "name": "fslogixstorageAccountCustomName",
                                     "type": "Microsoft.Common.TextBox",
-                                    "label": "Storage account prefix",
-                                    "visible": "[or(equals(steps('storage').storageFslogix.fslogixDeployment, true), equals(steps('storage').storageMsix.msixDeployment, true))]",
-                                    "toolTip": "Azure Virtual Desktop storage account prefix custom name.",
-                                    "placeholder": "Example: st",
+                                    "label": "Fslogix Storage account name",
+                                    "visible": "[equals(steps('storage').storageFslogix.fslogixDeployment, true)]",
+                                    "toolTip": "Azure Virtual Desktop fslogix storage account custom name.",
+                                    "placeholder": "Example: stavdfslogix01",
                                     "constraints": {
                                         "required": true,
                                         "regex": "^[a-z0-9A-Z-]{1,2}$",
-                                        "validationMessage": "Value must be 1-2 characters."
+                                        "validationMessage": "Value must be 3-24 characters."
+                                    }
+                                },
+                                {
+                                    "name": "msixstorageAccountCustomName",
+                                    "type": "Microsoft.Common.TextBox",
+                                    "label": "MSIX Storage account name",
+                                    "visible": "[equals(steps('storage').storageMsix.msixDeployment, true)]",
+                                    "toolTip": "Azure Virtual Desktop MSIX storage account custom name.",
+                                    "placeholder": "Example: stavdmsix01",
+                                    "constraints": {
+                                        "required": true,
+                                        "regex": "^[a-z0-9A-Z-]{1,2}$",
+                                        "validationMessage": "Value must be 3-24 characters."
                                     }
                                 },
                                 {
@@ -2417,7 +2430,8 @@
                 "avdApplicationGroupCustomFriendlyName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingAvdManagementPlane.applicationGroupCustomFriendlyName, 'no')]",
                 "avdSessionHostCustomNamePrefix": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingCompute.sessionHostCustomNamePrefix, 'no')]",
                 "avdAvailabilitySetCustomNamePrefix": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingCompute.availabilitySetCustomNamePrefix, 'no')]",
-                "storageAccountPrefixCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingStorage.storageAccountPrefixCustomName, 'no')]",
+                "fslogixstorageAccountCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingStorage.fslogixstorageAccountCustomName, 'no')]",
+                "msixstorageAccountCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingStorage.msixstorageAccountCustomName, 'no')]",
                 "fslogixFileShareCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingStorage.fslogixFileShareCustomName, 'no')]",
                 "msixFileShareCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingStorage.msixFileShareCustomName, 'no')]",
                 "avdWrklKvPrefixCustomName": "[if(equals(steps('resourceNaming').resourceNamingSelection, true), steps('resourceNaming').resourceNamingAvdManagementPlane.workloadKvCustomName, 'no')]",
