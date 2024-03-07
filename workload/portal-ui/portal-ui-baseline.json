@@ -1837,7 +1837,7 @@
                                     "placeholder": "Example: stavdfslogix01",
                                     "constraints": {
                                         "required": true,
-                                        "regex": "^[a-z0-9A-Z-]{1,2}$",
+                                        "regex": "^[a-z0-9A-Z-]{3,24}$",
                                         "validationMessage": "Value must be 3-24 characters."
                                     }
                                 },
@@ -1850,7 +1850,7 @@
                                     "placeholder": "Example: stavdmsix01",
                                     "constraints": {
                                         "required": true,
-                                        "regex": "^[a-z0-9A-Z-]{1,2}$",
+                                        "regex": "^[a-z0-9A-Z-]{3,24}$",
                                         "validationMessage": "Value must be 3-24 characters."
                                     }
                                 },
