@@ -11664,7 +11664,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -11876,12 +11876,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -12115,12 +12115,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -12354,12 +12354,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -12593,12 +12593,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -12832,12 +12832,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -13071,12 +13071,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -13310,12 +13310,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -13549,12 +13549,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -13710,12 +13710,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
@@ -14541,7 +14541,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -14753,12 +14753,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -14992,12 +14992,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -15231,12 +15231,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -15470,12 +15470,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -15709,12 +15709,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -15948,12 +15948,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -16187,12 +16187,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -16426,12 +16426,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -16587,12 +16587,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
@@ -17418,7 +17418,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -17630,12 +17630,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -17869,12 +17869,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -18108,12 +18108,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -18347,12 +18347,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -18586,12 +18586,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -18825,12 +18825,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -19064,12 +19064,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -19303,12 +19303,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -19464,12 +19464,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
@@ -20295,7 +20295,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -20507,12 +20507,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -20746,12 +20746,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -20985,12 +20985,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -21224,12 +21224,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -21463,12 +21463,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -21702,12 +21702,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -21941,12 +21941,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -22180,12 +22180,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -22341,12 +22341,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
@@ -23172,7 +23172,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -23384,12 +23384,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -23623,12 +23623,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -23862,12 +23862,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -24101,12 +24101,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -24340,12 +24340,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -24579,12 +24579,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -24818,12 +24818,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -25057,12 +25057,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -25218,12 +25218,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
@@ -26049,7 +26049,7 @@
                     },
                     "privateDnsZone": {
                       "type": "Microsoft.Network/privateDnsZones",
-                      "apiVersion": "2020-06-01",
+                      "apiVersion": "2020-09-01",
                       "name": "[parameters('name')]",
                       "location": "[parameters('location')]",
                       "tags": "[parameters('tags')]"
@@ -26261,12 +26261,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "A": {
                               "type": "Microsoft.Network/privateDnsZones/A",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aRecords": "[parameters('aRecords')]",
@@ -26500,12 +26500,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "AAAA": {
                               "type": "Microsoft.Network/privateDnsZones/AAAA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "aaaaRecords": "[parameters('aaaaRecords')]",
@@ -26739,12 +26739,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "CNAME": {
                               "type": "Microsoft.Network/privateDnsZones/CNAME",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "cnameRecord": "[parameters('cnameRecord')]",
@@ -26978,12 +26978,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "MX": {
                               "type": "Microsoft.Network/privateDnsZones/MX",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -27217,12 +27217,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "PTR": {
                               "type": "Microsoft.Network/privateDnsZones/PTR",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -27456,12 +27456,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SOA": {
                               "type": "Microsoft.Network/privateDnsZones/SOA",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -27695,12 +27695,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "SRV": {
                               "type": "Microsoft.Network/privateDnsZones/SRV",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -27934,12 +27934,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "TXT": {
                               "type": "Microsoft.Network/privateDnsZones/TXT",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "properties": {
                                 "metadata": "[parameters('metadata')]",
@@ -28095,12 +28095,12 @@
                             "privateDnsZone": {
                               "existing": true,
                               "type": "Microsoft.Network/privateDnsZones",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[parameters('privateDnsZoneName')]"
                             },
                             "virtualNetworkLink": {
                               "type": "Microsoft.Network/privateDnsZones/virtualNetworkLinks",
-                              "apiVersion": "2020-06-01",
+                              "apiVersion": "2020-09-01",
                               "name": "[format('{0}/{1}', parameters('privateDnsZoneName'), parameters('name'))]",
                               "location": "[parameters('location')]",
                               "tags": "[parameters('tags')]",
